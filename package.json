@@ -10,7 +10,7 @@
   "pre-commit": [
     "check"
   ],
-  "author": "o2",
+  "author": "ARTEDELAFIAMMA",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.8.7",
