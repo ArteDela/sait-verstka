@@ -1,0 +1,6 @@
+{% extends "layouts/lay-inner.twig" %}
+{% set title = 'cookie' %}
+{% block page %}
+	{% include "/blocks/privacy/privacy.twig" with title  %}
+	{% include "/blocks/cookie/cookie.twig" with title  %}
+{% endblock %}

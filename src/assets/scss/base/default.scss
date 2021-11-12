@@ -1,0 +1,77 @@
+.container
+{
+	max-width: 1420px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	padding:0 20px;
+}
+.g-input
+{
+	position: relative;
+	margin-bottom: 20px;
+	display: block;
+	width: 100%;
+	input{width: 100%;}
+	&.error
+	{
+		.g-input__sub{display: block;}
+	}
+}
+.g-checkbox
+{
+	position: relative;
+	&:not(:last-child){margin-bottom: 10px;}
+	&.error
+	{
+		.g-input__sub
+		{
+			top: 16px;
+			display: block;
+			font-size: 13px;
+		}
+	}
+}
+.g-input__sub
+{
+	position: absolute;
+	color: red;
+	display: none;
+}
+input.g-button
+{
+	border-radius: 20px;
+	border:none;
+	padding: 0 20px;
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	color:white;
+	box-shadow: 0 0 15px rgba(0 ,163, 255, .5);
+	background: linear-gradient(180deg, #41c6ff 0%, #004fc7 100%);
+	transition: .2s;
+	&:hover
+	{
+		transform: translateY(-2px);
+		transition: .2s;
+	}
+}
+button.g-btn-transition
+{
+	border-radius: 20px;
+	border:none;
+	padding: 0 20px;
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+	color:white;
+	box-shadow: 0 0 15px rgba(0 ,163, 255, .5);
+	background: linear-gradient(180deg, #ff4164 0%, #00c73d 100%);
+	transition: .2s;
+	&:hover
+	{
+		transform: translateY(-2px);
+		transition: .2s;
+	}
+}

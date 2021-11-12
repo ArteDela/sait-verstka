@@ -1,0 +1,18 @@
+.disclamer
+{
+	font-size: 25px;
+	background: #1a2454;
+	padding: 50px 0;
+	text-align: center;
+	color: #fdfbfe;
+	text-align: center;
+	line-height: 1.3;
+}
+@media (max-width: 767px)
+{
+	.disclamer
+	{
+		font-size: 15px;
+		padding: 25px 0;
+	}
+}

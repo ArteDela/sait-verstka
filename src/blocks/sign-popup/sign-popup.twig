@@ -1,0 +1,42 @@
+<div class="_sign-popup sign-popup" style="display:none;">
+	<div class="sign-popup__content _popup-content">
+		<div onclick="mainObj.gPopup.close()" class="g-popup__clsoe">
+			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect x="2.35559" width="29.982" height="3.33133" transform="rotate(45 2.35559 0)" fill="white"/>
+				<rect width="29.982" height="3.33133" transform="matrix(-0.707107 0.707107 0.707107 0.707107 21.2004 0)" fill="white"/>
+			</svg>
+		</div>
+		<form onsubmit="return mainObj.signPopup.submit(this)">
+			<label class="g-input _field" data-code="email" data-call="empty email">
+				<input name="name" type="text" class="g-input__input" placeholder="Email">
+				<div class="g-input__sub _error-msg">Error: invalid name</div>
+			</label>
+			<label class="g-input _field"  data-call="empty">
+				<input name="name" type="password" class="g-input__input _passwords" placeholder="Password">
+				<div class="g-input__sub _error-msg">Error: invalid name</div>
+			</label>
+			<label class="g-input _field" data-code="confirm" data-call="empty confirm">
+				<input name="name" type="password" class="g-input__input" placeholder="Confirm password">
+				<div class="g-input__sub _error-msg">Error: invalid name</div>
+			</label>
+			<label class="_field g-checkbox" data-call="checked">
+				<input type="checkbox" name="" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">I accept the <a href="/privacy.html">Privacy policy</a></span>
+				</div>
+				<div class="g-input__sub _error-msg g-input__sub--width">Ничего не выбрано</div>
+			</label>
+			<label class="_field g-checkbox" data-call="checked">
+				<input type="checkbox" name="" class="g-checkbox__input">
+				<div class="g-checkbox__body">
+					<span class="g-checkbox__box"></span>
+					<span class="g-checkbox__text">I accept the <a href="/terms.html">Terms & Conditions</a></span>
+				</div>
+				<div class="g-input__sub _error-msg g-input__sub--width">Ничего не выбрано</div>
+			</label>
+			<input class="g-button" type="submit" value="Sign in">
+		</form>
+		<button class="g-btn-transition" onclick="mainObj.gPopup.open('sign-popup-login')">Login</button>
+	</div>
+</div>

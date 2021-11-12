@@ -1,0 +1,14 @@
+.sign-popup__content
+{
+	width: 350px;
+	max-height: calc(100% - 20px);
+	background: #fff;
+	margin:0 auto;
+	padding:40px;
+	border-radius:4px;
+	font-size:14px;
+	box-shadow: 0 4px 10px rgba(0,0,0,.08);
+	overflow: auto;
+	position: relative;
+	form{margin-bottom: 10px;}
+}

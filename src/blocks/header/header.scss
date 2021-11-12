@@ -1,0 +1,136 @@
+.header
+{
+	padding: 10px 0;
+	position: relative;
+}
+.header__flex
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.header__flex-burg
+{
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	transition: .2s;
+	padding: 0 20px;
+	border-radius:10px;
+	.header__flex-burg-item{transition: .4s;}
+	&.active
+	{
+		.header__flex-burg-item
+		{
+			&:first-child
+			{
+				transform: translate(0px, 12px) rotate(45deg);
+				transition: .4s;
+			}
+			&:nth-child(2)
+			{
+				transform: rotate(45deg);
+				transition: .4s;
+			}
+			&:nth-child(3)
+			{
+				transform: translate(0px, -12px) rotate(-45deg);
+				transition: .4s;
+			}
+		}
+	}
+	&:hover
+	{
+		transition: .2s;
+		background: #2f344b;
+	}
+}
+.header__flex-burg-text
+{
+	font-size: 40px;
+	font-weight: 700;
+	text-transform:uppercase;
+	color:white;
+	margin-right: 20px;
+	padding-top: 7px;
+}
+.header__flex-burg-item
+{
+	height: 5px;
+	width: 40px;
+	border-radius:20px;
+	background: white;
+	&:not(:last-child){margin-bottom: 7px;}
+}
+.header-menu
+{
+	width: 599px;
+	background: #000228;
+	position: absolute;
+	right: -130%;
+	padding: 50px 65px;
+	top: 126px;
+	transition: .4s;
+	z-index: 10;
+	&.active
+	{
+		right: 0;
+		transition: .3s;
+	}
+}
+.header-menu__list
+{
+	&:not(:last-child){margin-bottom: 30px;}
+	a
+	{
+		border-radius: 45px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #fdfbfe;
+		font-size: 30px;
+		text-decoration: none;
+		background: #1a2454;
+		height: 90px;
+		transition: .3s;
+	}
+}
+@media (max-width: 570px)
+{
+	.header__flex-link
+	{
+		width: 140px;
+		height: 48px;
+		svg
+		{
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.header-menu
+	{
+		padding: 20px 45px;
+		width: 100%;
+		top: 68px;
+	}
+	.header-menu__list
+	{
+		a
+		{
+			height: 50px;
+			font-size: 20px;
+		}
+	}
+	.header__flex-burg-text
+	{
+		font-size: 22px;
+		padding-top: 5px;
+		margin-right: 10px;
+	}
+	.header__flex-burg-item
+	{
+		width: 25px;
+		height: 2px;
+		&:not(:last-child){margin-bottom: 5px;}
+	}
+}

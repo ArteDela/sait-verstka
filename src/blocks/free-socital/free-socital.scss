@@ -1,0 +1,31 @@
+.free-socital
+{
+	padding: 60px 0;
+	background: #000228;
+}
+.free-socital__item{margin-bottom: 25px;}
+.free-socital__item-title
+{
+	font-size: 40px;
+	line-height: 40px;
+	color:white;
+	font-family: 'Geometria-bold';
+	margin: 0;
+}
+.free-socital__item-abs
+{
+	font-size: 25px;
+	margin: 0;
+	color:white;
+}
+.free-socital__flex
+{
+	display: flex;
+	align-items: center;
+	svg
+	{
+		width: 40px;
+		height: 40px;
+		&:not(:last-child){margin-right: 10px;}
+	}
+}

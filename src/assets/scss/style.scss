@@ -1,0 +1,53 @@
+/* mixins */
+@import 'base/mixins.scss';
+
+/* base */
+@import 'base/fonts';
+@import 'base/variables';
+@import 'base/normalize';
+@import 'base/typography';
+@import 'base/default';
+@import 'base/prettify';
+
+/* blocks */
+@import 'blocks/footer/footer';
+@import 'blocks/header/header';
+@import 'blocks/privacy/privacy';
+@import 'blocks/disclamer/disclamer';
+@import 'blocks/free/free';
+@import 'blocks/games/games';
+@import 'blocks/g-popup/g-popup';
+@import 'blocks/sign-popup/sign-popup';
+@import 'blocks/sign-popup-login/sign-popup-login';
+@import 'blocks/g-checkbox/g-checkbox';
+@import 'blocks/games-popup/games-popup';
+@import 'blocks/free-socital/free-socital';
+@import 'blocks/footer-inner/footer-inner';
+@import 'blocks/play/play';
+@import 'blocks/mission/mission';
+@import 'blocks/privacy-text/privacy-text';
+@import 'blocks/terms/terms';
+@import 'blocks/cookie/cookie';
+
+/* pages */
+@import 'blocks/contacts/contacts';
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	outline: 0;
+	&:before,
+	&:after {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+html
+{
+	line-height: $mainLineHeight;
+	font-size: $mainFontSize;
+	color: $mainFontColor;
+	-webkit-font-smoothing: antialiased;
+}

@@ -1,0 +1,14 @@
+{% if index == true %}
+	<div class="privacy">
+		<h1 class="privacy__title">BEST VIDEOGAMES TOTALLY FREE!</h1>
+		<p class="privacy__abs">Please check our Privacy Policy and Terms & Conditions</p>
+		<div class="privacy__flex">
+			<button class="privacy__btn privacy__btn--sign" onclick="mainObj.gPopup.open('sign-popup')">sign in</button>
+			<button class="privacy__btn" onclick="mainObj.gPopup.open('sign-popup-login')">login</button>
+		</div>
+	</div>
+{% else %}
+		<div class="privacy">
+			<h1 class="privacy__title">{{title}}</h1>
+		</div>
+{% endif %}

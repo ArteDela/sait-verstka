@@ -1,0 +1,14 @@
+.privacy-text
+{
+	padding: 50px 0;
+	background: black;
+}
+.privacy-text__content
+{
+	color: white;
+	font-size: 25px;
+}
+@media (max-width: 600px)
+{
+	.privacy-text__content{font-size: 20px;}
+}
